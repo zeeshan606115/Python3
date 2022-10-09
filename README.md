@@ -8,3 +8,9 @@ pip install dataclasses
 
 
 The DataClasses are implemented by using decorators with classes. Attributes are declared using Type Hints in Python which is essentially, specifying data type for variables in python.
+
+
+In dataclasses we have built-in __init__() method (constructor) so we don't have to define constructor explicitly. 
+It have built-in __repr__() method.
+It have built-in __eq__() method.
+
