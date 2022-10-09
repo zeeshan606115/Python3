@@ -7,3 +7,21 @@ pip install dataclasses
 The DataClasses are implemented by using decorators with classes. Attributes are declared using Type Hints in Python which is essentially, specifying data type for variables in python.
 
 In dataclasses we have built-in init() method (constructor) so we don't have to define constructor explicitly. It have built-in repr() method. It have built-in eq() method.
+
+
+We can pass some optional parameter to our dataclasses such as
+
+Eg:- dataclass(cls=None, *, init = True, repr = True, eq = True, order = False, unsafehash=False, frozen = False)
+
+1) By default __init__() method is true but if we make it False then we have to explicitly define the constructor.
+2) By default __repr__() method is true but if we make it False then we cannot see the structured representation of our class.
+3) By default __eq__() method is true but if we make it False then we cannot check the equality of 2 objects and it will return False always.
+4) Order = False --> There are some inbuilt magic method to compare the objects like
+	a) __lt__() --> Less Than
+	b) __le__() --> Less Than equal to
+	c) __gt__() --> Greater Then
+	d) __ge__() -->Greater Than equal to
+
+If we want to compare 2 objects then we have to pass order = True otherwise it will through error.
+
+5) By default frozen is False but if we make it true then we cannot change the object value and we will get "FrozenInstanceError" error also.
