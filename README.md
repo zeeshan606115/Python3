@@ -1,1 +1,10 @@
 # Python3
+
+Dataclass module is introduced in Python 3.7 as a utility tool to make structured classes specially for storing data. These classes hold certain properties and functions to deal specifically with the data and its representation.
+
+Although the module was introduced in Python3.7, one can also use it in Python3.6 by installing dataclasses library. 
+
+pip install dataclasses
+
+
+The DataClasses are implemented by using decorators with classes. Attributes are declared using Type Hints in Python which is essentially, specifying data type for variables in python.
